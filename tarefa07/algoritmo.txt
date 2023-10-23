@@ -1,0 +1,10 @@
+for (a = max, a != NULL, a = predecessor(b)){
+    for(b = predecessor(a), b != NULL, b = predecessor(b)){
+        busco(autoridade - a.valor - b.valor)
+        if (busca == sim){
+            a = a;
+            b = b;
+            c = c;
+        }
+    }
+}

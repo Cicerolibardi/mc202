@@ -1,0 +1,20 @@
+a)  A diferença entre passar os argumentos por ponteiros ou por
+    valores é que por valores, a função faz uma cópia desse valor,
+    ou seja, há um gasto de memória muito grande quando há structs
+    muito grandes, por exemplo.
+    Quando passa-se por ponteiros, há a passagem do endereço de memória
+    a qual está alocado o valor, então há uma cópia somente do endereço
+    dessa memória, fazendo com que haja a cópia de um valor muito menor
+    com relação a disposição de memória.
+
+b)  Pelo motivo citado anteriormente, pois passando-se o ponteiro de uma
+    struct, passa-se o endereço de memória que foi alocado para que aquela
+    struct exista, ou seja, um valor fixo de memória alocado para esse struct,
+    sem que hajam novas criações dentro da pilha.
+
+c)  A passagem por valores é inteligente quando não deseja-se modificar o valor
+    que está alocado naquele ponteiro, fazendo com que sejam realizadas operações
+    com o valor sem que haja modificação em tal ponto na memória. É valoroso passar-se
+    valores e não ponteiros também quando não se preocupa com a memória do programa, fazendo
+    com que em certos casos a eficiência possa ser maior.
+    

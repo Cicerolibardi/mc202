@@ -1,0 +1,1 @@
+Foram realizadas as permutações possíveis para tal árvore na unidade14.
